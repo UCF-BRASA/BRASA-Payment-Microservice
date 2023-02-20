@@ -1,11 +1,9 @@
 
-import json
-from textwrap import indent
+
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 from util.constants import Keys, google_api_scope
-from util.functions import parse_json
 
 sheets_creds = ServiceAccountCredentials.from_json_keyfile_name(
     Keys.SHEETS_CREDs, google_api_scope)

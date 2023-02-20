@@ -16,8 +16,13 @@ Here's an example of where you can find on Visual Studio Code on a Windows OS:
 ## 1. Install Python
 Please install the most recent version of Python here: https://www.python.org/downloads/
 
+## 2. Clone this repository
+```
+git clone https://github.com/UCF-BRASA/BRASA-Payment-Microservice.git
+```
+
 ## 2. Run the setup script (in a Git terminal)
-- For Windows (in a Git, where the project is):
+- For Windows (go to ):
   ```
   bash RUN_ME_IN_GIT.sh
   ```
@@ -25,13 +30,20 @@ Please install the most recent version of Python here: https://www.python.org/do
 - For Linux/Mac OS: <br>
   (if it's not working, please contact Fachetti or Duda)
 
+<hr>
+
+* TO PREVENT BUGS, PLEASE RUN THE FOLLOWING COMMAND
+  ```
+  pip install pipenv
+  ```
+
 
 ## 3. Activate the environment (in any terminal)
 ```
 python -m pipenv shell
 ```
 
-## 4. Make sure to put the Python interpreter from the virtual environment (if this step is too confusing, please reach out to us!)
+## 4. Use Python interpreter from the local virtual environment (if this step is too confusing, please reach out to us!)
 1. To find your virtual environment, run the following command:
     ```
     pipenv --venv
@@ -58,13 +70,12 @@ python -m pipenv shell
 On development mode: <br>
 (make sure to check if the virtual environment is activated)
 ```
-python wsgi.py
+python -m app
 ```
 
-On production mode: (this might not work. Just do stuff on development mode)
-```
-gunicorn -w 4 -b localhost:9090 wsgi:app
-```
+On production mode: 
+
+  (working on a command for this one)
 
 
 # Pushing your code

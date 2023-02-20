@@ -11,6 +11,8 @@ flask-apscheduler = "*"
 gspread = "*"
 oauth2client = "*"
 gunicorn = "*"
+bson = "*"
+pymongo = "*"
 
 [dev-packages]
 autopep8 = "*"

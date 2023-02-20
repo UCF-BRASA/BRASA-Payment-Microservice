@@ -6,19 +6,20 @@ from flask_apscheduler import APScheduler
 
 
 # project imports
-from util.functions import check_venv, parse_json
+from util.functions import parse_json
 from util.constants import Keys
 from logic.sheets.functions import send_to_sheets
 from logic.venmo.functions import DELETE_ALL_VENMO_DB_INFO, auth_user, get_most_recent_transaction, insert_venmo_trasactions, load_client
 
 # check the virtual environment
-check_venv()
+# check_venv()
 
 app = Flask(__name__)
 scheduler = APScheduler()
 
 # I will change this later to file-like configs
-app.config['JSON_SORT_KEYS'] = False
+# app.config['JSON_SORT_KEYS'] = False
+app.config.from_object('util.config.DevConfig')
 
 
 @app.route("/")

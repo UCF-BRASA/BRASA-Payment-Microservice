@@ -1,15 +1,10 @@
 
 # general imports
-from dotenv import load_dotenv
 import pymongo
-
-# specific imports
 from venmo_api import Client
 
+# project imports
 from util.constants import Keys
-
-# loading the .env file
-load_dotenv('.env')
 
 
 def load_client() -> Client:
