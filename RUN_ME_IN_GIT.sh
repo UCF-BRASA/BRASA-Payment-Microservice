@@ -82,14 +82,3 @@ install_and_validate_pip
 
 # 2. Install all required packages
 install_packages
-
-# 3. Activate environment
-python -m pipenv shell
-
-# 4. Clear terminal
-clear
-
-# 4. Get .env file setup
-python ./util/setup.py
-
-

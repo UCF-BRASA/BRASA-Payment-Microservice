@@ -66,6 +66,16 @@ python -m pipenv shell
    
 		![path sc](https://user-images.githubusercontent.com/73730027/220030895-87a600d9-4dc1-4685-8dac-91be2b41509e.png)
 
+
+## 5. Run setup script
+```
+python util/setup.py
+```
+
+## 6. Ask for `sheets_creds.json` 
+Ask Fachetti or Duda, instructions on this part. You need to get actual these credentials in Google Cloud.
+
+
 # Start server
 On development mode: <br>
 (make sure to check if the virtual environment is activated)
